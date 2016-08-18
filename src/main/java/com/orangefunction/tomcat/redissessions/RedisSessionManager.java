@@ -72,7 +72,7 @@ public class RedisSessionManager extends ManagerBase implements Lifecycle {
 
   protected String serializationStrategyClass = "com.orangefunction.tomcat.redissessions.JavaSerializer";
 
-  protected EnumSet<SessionPersistPolicy> sessionPersistPoliciesSet = EnumSet.of(SessionPersistPolicy.DEFAULT);
+  protected EnumSet<SessionPersistPolicy> sessionPersistPoliciesSet = EnumSet.of(SessionPersistPolicy.SAVE_ON_CHANGE);
 
   /**
    * The lifecycle event support for this component.
