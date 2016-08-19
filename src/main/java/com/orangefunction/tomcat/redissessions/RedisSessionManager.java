@@ -448,6 +448,8 @@ public class RedisSessionManager extends ManagerBase implements Lifecycle {
       }
     }
 
+    // So that last accessed time gets updated.
+    session.access();
     return session;
   }
 
