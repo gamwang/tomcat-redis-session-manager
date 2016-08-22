@@ -105,6 +105,7 @@ public class RedisSession extends StandardSession {
     super.setPrincipal(principal);
   }
 
+  /**
   @Override
   public void writeObjectData(java.io.ObjectOutputStream out) throws IOException {
     super.writeObjectData(out);
@@ -116,5 +117,6 @@ public class RedisSession extends StandardSession {
     super.readObjectData(in);
     this.setCreationTime(in.readLong());
   }
+  */
 
 }
